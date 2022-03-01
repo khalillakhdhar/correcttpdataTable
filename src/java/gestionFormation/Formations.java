@@ -21,13 +21,17 @@ import javax.faces.bean.RequestScoped;
 public class Formations {
     List<Formation> listFormations=new ArrayList<Formation>();
 
-    public List<Formation> getListFormations() {
-        Formation f1=new Formation("java", "java basique", 2000, 5);
+    public Formations() {
+           Formation f1=new Formation("java", "java basique", 2000, 5);
         Formation f2=new Formation("java JSF", "java JSF", 2000, 5);
         Formation f3=new Formation("java hibernate", "java hibernate", 2000, 5);
         listFormations.add(f1);
         listFormations.add(f2);
         listFormations.add(f3);
+    }
+
+    public List<Formation> getListFormations() {
+     
         return listFormations;
     }
 
